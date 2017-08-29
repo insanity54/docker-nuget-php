@@ -5,7 +5,7 @@ set -ex
 # Exit if necessary environment variables are not set
 if [ -z "$MYSQL_USERNAME" -o -z "$MYSQL_PASSWORD" -o -z "$MYSQL_DBNAME" ]; then
     echo >&2 'error: Docker does not know how to connect php with your mysql instance.'
-    echo >&2 '  You need to specify MYSQL_USERNAME, MYSQL_PASSWORD, and MYSQL_DBNAME as build args in the php service section your docker-compose.yml file'
+    echo >&2 '  You need to specify MYSQL_USERNAME, MYSQL_PASSWORD, and MYSQL_DBNAME as environment variables in the php container.'
     exit 1
 fi
 
