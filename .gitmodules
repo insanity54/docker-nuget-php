@@ -1,0 +1,3 @@
+[submodule "simple-nuget-server"]
+	path = simple-nuget-server
+	url = https://github.com/Daniel15/simple-nuget-server/
